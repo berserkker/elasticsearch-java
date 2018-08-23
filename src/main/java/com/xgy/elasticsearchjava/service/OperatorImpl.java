@@ -1,7 +1,7 @@
-package com.xgy.elsdemo.service;
+package com.xgy.elasticsearchjava.service;
 
-import com.xgy.elsdemo.entity.Person;
-import com.xgy.elsdemo.util.Tools;
+import com.xgy.elasticsearchjava.entity.Person;
+import com.xgy.elasticsearchjava.util.Tools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

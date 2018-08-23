@@ -1,4 +1,4 @@
-package com.xgy.elsdemo;
+package com.xgy.elasticsearchjava;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

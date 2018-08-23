@@ -1,4 +1,4 @@
-package com.xgy.elsdemo.entity;
+package com.xgy.elasticsearchjava.entity;
 
 import org.springframework.data.elasticsearch.annotations.Document;
 

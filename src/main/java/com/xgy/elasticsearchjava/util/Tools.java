@@ -1,4 +1,4 @@
-package com.xgy.elsdemo.util;
+package com.xgy.elasticsearchjava.util;
 
 import org.springframework.stereotype.Component;
 
