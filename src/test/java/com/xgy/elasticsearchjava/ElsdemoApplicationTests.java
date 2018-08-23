@@ -20,7 +20,7 @@ public class ElsdemoApplicationTests {
 
         //插入100条数据
         int i = 0;
-        while (i < 10) {
+        while (i < 100) {
             Person person = new Person();
             operator.addPerson(person);
             i++;
