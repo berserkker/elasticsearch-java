@@ -1,7 +1,6 @@
 package com.xgy.elasticsearchjava;
 
-import com.xgy.elasticsearchjava.entity.Person;
-import com.xgy.elasticsearchjava.service.OperatorImpl;
+import com.xgy.elasticsearchjava.service.ExcuteThread;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,18 +12,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ElsdemoApplicationTests {
 
     @Autowired
-    private OperatorImpl operator;
+    private ExcuteThread excuteThread;
 
     @Test
     public void contextLoads() {
 
-        //插入100条数据
-        int i = 0;
-        while (i < 100) {
-            Person person = new Person();
-            operator.addPerson(person);
-            i++;
-        }
+        excuteThread.insertEls();
     }
-
 }
