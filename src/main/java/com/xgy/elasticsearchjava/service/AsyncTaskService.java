@@ -12,11 +12,13 @@ public class AsyncTaskService {
     private OperatorImpl operatorImpl;
 
     @Async
-    public void insert(){
-        int i =0;
-        while (i<10){
+    //异步方法
+    public void insert(int i){
+        System.out.println("开始插入--------"+i);
+        int k =0;
+        while (k<100){
             operatorImpl.addPerson(new Person());
-            i++;
+            k++;
         }
 
     }

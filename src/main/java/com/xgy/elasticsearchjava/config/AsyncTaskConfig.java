@@ -10,7 +10,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import java.util.concurrent.Executor;
 
 @Configuration
-@ComponentScan("config")
+@ComponentScan("com.xgy.elasticsearchjava.config")
 @EnableAsync
 //线程配置类
 public class AsyncTaskConfig implements AsyncConfigurer {
@@ -26,7 +26,7 @@ public class AsyncTaskConfig implements AsyncConfigurer {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
         taskExecutor.setCorePoolSize(5);// 最小线程数
         taskExecutor.setMaxPoolSize(10);// 最大线程数
-        taskExecutor.setQueueCapacity(25);// 等待队列
+        taskExecutor.setQueueCapacity(20);// 等待队列
         taskExecutor.initialize();
         return taskExecutor;
     }

@@ -21,8 +21,7 @@ public class ElsdemoApplication {
         SpringApplication.run(ElsdemoApplication.class, args);
     }
 
-    // 测试无返回结果
-    private static void testVoid() {
+    /*private static void testVoid() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AsyncTaskConfig.class);
         AsyncTaskService asyncTaskService = context.getBean(AsyncTaskService.class);
 
@@ -32,6 +31,6 @@ public class ElsdemoApplication {
         }
 
         context.close();
-    }
+    }*/
 
 }
