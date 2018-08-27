@@ -43,14 +43,6 @@ public class Employee {
 
 	private String about;
 	
-	
-	
-	
-
-	
-
-	
-
 	public int getId() {
 		return id;
 	}

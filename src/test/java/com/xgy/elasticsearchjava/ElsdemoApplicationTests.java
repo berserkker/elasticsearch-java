@@ -1,9 +1,6 @@
 package com.xgy.elasticsearchjava;
 
-import com.xgy.elasticsearchjava.service.ExcuteThread;
-import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -11,12 +8,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ElsdemoApplicationTests {
 
-    @Autowired
-    private ExcuteThread excuteThread;
+    /*@Test
+    public void testVoid() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AsyncTaskConfig.class);
+        AsyncTaskService asyncTaskService = context.getBean(AsyncTaskService.class);
 
-    @Test
-    public void contextLoads() {
+        *//* 创建了3个线程 *//*
+        for (int i = 1; i <= 5; i++) {
+            asyncTaskService.insert();
+        }
 
-        excuteThread.insertEls();
-    }
+        context.close();
+    }*/
 }
